@@ -196,10 +196,10 @@ Q: Why track order completion server-side?
 - [ ] Analytics tools only accept server events :: They accept both.
 
 Q: Which should NOT be sent as an analytics event property?
-- [ ] cart_value :: Fine.
-- [ ] payment_method :: Fine.
+- [ ] cart_value :: A useful, non-personal property for analysing checkout behaviour.
+- [ ] payment_method :: Non-personal and useful for comparing payment success.
 - [x] The user’s full phone number :: Correct. Personal data doesn’t belong in analytics events.
-- [ ] item_count :: Fine.
+- [ ] item_count :: Non-personal and useful for basket analysis.
 
 Q: Why define a precise trigger for each event?
 - [ ] To make the tracking plan longer :: Not the reason.

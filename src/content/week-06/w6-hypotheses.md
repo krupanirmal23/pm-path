@@ -159,7 +159,7 @@ Q: Why include the “because” in a hypothesis?
 - [ ] It sounds more convincing :: Not the main reason.
 - [x] It states the evidence and mechanism, so results teach you why something did or didn’t work :: Correct.
 - [ ] It’s required by analytics tools :: Not required by tools.
-- [ ] To blame users :: No.
+- [ ] To blame users :: Hypotheses are about your change and its mechanism, not about assigning blame.
 
 Q: A team tracks 15 metrics and reports the 2 that went up. What’s the problem?
 - [ ] Nothing; good news is good :: This is metric fishing.
