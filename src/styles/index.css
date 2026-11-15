@@ -344,3 +344,9 @@ code, kbd, pre { font-family: var(--font-mono); }
 
 .scrollbar-thin { scrollbar-width: thin; }
 .sr-only-focusable:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* Surface-coloured elements nested inside pastel blocks must not inherit the dark on-pastel text,
+   which would be unreadable on the dark-mode surface. Text utilities (utilities layer) still win. */
+@layer components {
+  .nb-card, .bg-surface, .bg-bg { color: var(--c-ink); }
+}

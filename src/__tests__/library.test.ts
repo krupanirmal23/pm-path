@@ -52,3 +52,12 @@ describe('interview questions', () => {
     }
   });
 });
+
+import { GLOSSARY } from '../data/glossary';
+describe('glossary', () => {
+  it('has 200+ unique terms with definitions', () => {
+    expect(GLOSSARY.length).toBeGreaterThanOrEqual(200);
+    expect(new Set(GLOSSARY.map((t) => t.term.toLowerCase())).size).toBe(GLOSSARY.length);
+    for (const t of GLOSSARY) expect(t.def.length, t.term).toBeGreaterThan(25);
+  });
+});
