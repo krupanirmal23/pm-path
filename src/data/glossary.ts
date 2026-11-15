@@ -182,7 +182,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     ['Microservices', 'An architecture where an application is split into small independent services.'],
     ['Monolith', 'An application built as one single deployable unit.'],
     ['Cloud', 'Computing resources rented over the internet, such as AWS or Google Cloud.'],
-    ['Authentication', 'Verifying who a user is.'],
+    ['Authentication', 'Verifying who a user is, for example with a password, OTP or fingerprint.'],
     ['Authorisation', 'Deciding what an authenticated user is allowed to do.'],
     ['OAuth', 'A standard that lets users grant apps limited access to their accounts without sharing passwords.'],
     ['Encryption', 'Scrambling data so only authorised parties can read it.'],
