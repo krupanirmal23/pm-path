@@ -15,6 +15,7 @@ Lesson format: frontmatter (`id, title, week, estimatedMinutes, tags`), then sec
 `## Why this matters for a PM` · `## Core concepts` · `## Worked example` · `## Visual` (inline SVG in `<figure class="diagram">`) ·
 `## Step by step` · `## Common mistakes` · `## How it shows up in interviews` · `## Practice exercise` (with a ```` ```answer ```` block) ·
 `## Quiz` (a ```` ```quiz ```` block: `Q:` lines, `- [x] option :: explanation`) · `## Key takeaways`.
+Quiz rule: every option needs a real explanation (>12 chars; never just “Correct.”). Use ````answer (4 backticks) when the answer contains code.
 Callouts: `> [!TIP]`, `> [!WARNING]`, `> [!EXAMPLE]`, `> [!INTERVIEW]`, `> [!NOTE]`.
 
 Run `node scripts/coverage.mjs` to see exactly which lessons and guides exist.
@@ -22,7 +23,8 @@ Run `node scripts/coverage.mjs` to see exactly which lessons and guides exist.
 | Week | Lessons | Tool guides |
 |---|---|---|
 | 1–4 (Phase 1) | done | done |
-| 5 | in progress | |
+| 5–6 | done | done |
+| 7 | in progress | |
 
 ## SQL Playground dataset (lessons in Week 5 reference this exact schema)
 Synthetic Indian food-delivery data, fixed seed, dates 2025-01-01 → 2025-06-30.
