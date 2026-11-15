@@ -191,7 +191,7 @@ Q: Why is review mining useful in competitive analysis?
 - [ ] It replaces the need to use competitor products :: You should still use them.
 - [x] It shows, in users’ words and at scale, what they love and hate about each alternative :: Correct. Patterns in reviews reveal gaps.
 - [ ] It tells you competitors’ revenue :: Reviews don’t reveal revenue.
-- [ ] It’s required by law :: It isn’t.
+- [ ] It’s required by law :: No law requires it; it’s simply a cheap, useful research method.
 ```
 
 ## Key takeaways

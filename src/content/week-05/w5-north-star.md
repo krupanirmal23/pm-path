@@ -192,13 +192,13 @@ Q: Which is the best North Star for a food delivery app?
 
 Q: What makes a metric a “vanity metric”?
 - [ ] It’s hard to calculate :: Difficulty isn’t the issue.
-- [x] It looks good but doesn’t reflect value or change decisions :: Correct.
+- [x] It looks good but doesn’t reflect value or change decisions :: Correct. Vanity metrics feel good but don’t tell you what to do next.
 - [ ] It’s shared with investors :: Investors may see real metrics too.
 - [ ] It’s measured weekly :: Frequency doesn’t make a metric vanity.
 
 Q: Why should the North Star’s time window match natural usage frequency?
 - [ ] To make charts look smoother :: A side effect.
-- [x] Because a mismatched window gives misleading signals (e.g., daily metrics for a monthly-use product) :: Correct.
+- [x] Because a mismatched window gives misleading signals (e.g., daily metrics for a monthly-use product) :: Correct. A monthly bill-payer looks “inactive” on 29 days of a daily metric.
 - [ ] Because investors prefer monthly numbers :: Not the reason.
 - [ ] It doesn’t matter :: It matters a lot.
 
@@ -217,7 +217,7 @@ Q: A team boosts its North Star by sending 5 push notifications a day. Opt-outs 
 Q: Why is revenue usually not chosen as a product North Star?
 - [ ] Revenue is unimportant :: It’s very important.
 - [x] It’s a lagging result that doesn’t tell teams what user value to create :: Correct. The North Star should lead to revenue.
-- [ ] Revenue can’t be measured :: It can.
+- [ ] Revenue can’t be measured :: Revenue is easy to measure; it’s just too lagging to guide teams.
 - [ ] Only finance can see it :: Not the reason.
 ```
 

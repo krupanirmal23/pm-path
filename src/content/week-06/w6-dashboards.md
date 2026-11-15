@@ -165,25 +165,25 @@ Building your P2 dashboard:
 ```quiz
 Q: What should a dashboard’s top row usually show?
 - [ ] Every event tracked :: Far too much.
-- [x] The few headline metrics (North Star and key inputs) with comparisons :: Correct.
+- [x] The few headline metrics (North Star and key inputs) with comparisons :: Correct. Readers should know “are we OK?” within seconds.
 - [ ] A pie chart of all cities :: Not a headline view.
 - [ ] Raw event logs :: Not suitable for a dashboard.
 
 Q: Why compare today with the same day last week rather than yesterday?
 - [ ] It’s always more accurate :: Not always; it depends on patterns.
-- [x] It removes weekly patterns, like Fridays being busier than Tuesdays :: Correct.
+- [x] It removes weekly patterns, like Fridays being busier than Tuesdays :: Correct. Comparing like-for-like days avoids false alarms from normal weekly rhythm.
 - [ ] Yesterday’s data is never available :: It usually is.
-- [ ] Analytics tools require it :: They don’t.
+- [ ] Analytics tools require it :: Tools don’t require it; comparing like-for-like days is about accuracy.
 
 Q: Average delivery time is flat, but late-delivery complaints doubled. What should you add to the dashboard?
 - [ ] More averages :: Averages hide the problem.
 - [x] Percentiles (p90) and % of orders over a lateness threshold :: Correct. Distribution reveals what averages hide.
-- [ ] Total orders ever :: Unrelated.
+- [ ] Total orders ever :: Unrelated: a cumulative total hides the distribution problem.
 - [ ] A pie chart of complaints :: Not the best first step.
 
 Q: Which chart best shows where users drop off in checkout?
 - [ ] Pie chart :: Not for sequential steps.
-- [x] Funnel chart :: Correct.
+- [x] Funnel chart :: Correct. It shows each step and the drop between them in sequence.
 - [ ] Scatter plot :: Not for steps.
 - [ ] Cumulative line chart :: Hides step drop-off.
 
@@ -191,7 +191,7 @@ Q: Today’s orders on the dashboard look 60% lower than yesterday at 11 a.m. Wh
 - [ ] A huge outage :: Possible, but check the obvious first.
 - [x] Today is an incomplete period being compared with a full day :: Correct. Label or exclude incomplete periods.
 - [ ] The tracking plan is wrong :: Less likely than the partial-day effect.
-- [ ] Users stopped ordering forever :: Unlikely.
+- [ ] Users stopped ordering forever :: Unlikely: a partial day explains the gap far better.
 ```
 
 ## Key takeaways

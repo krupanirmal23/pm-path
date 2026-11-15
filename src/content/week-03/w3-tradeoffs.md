@@ -148,10 +148,10 @@ Happy to discuss. Could we meet Thursday to choose?
 
 ```quiz
 Q: What is opportunity cost?
-- [ ] The cost of a failed opportunity :: Not quite.
+- [ ] The cost of a failed opportunity :: Not quite: it’s the value of the alternative you gave up, not the cost of failure.
 - [x] The value of the best alternative you give up when you choose something :: Correct. It makes trade-offs concrete.
 - [ ] The money spent on a project :: That’s direct cost.
-- [ ] The cost of missing a market trend :: Too narrow.
+- [ ] The cost of missing a market trend :: Too narrow: opportunity cost applies to every choice, not just trends.
 
 Q: Date and team size are fixed, and the work is bigger than expected. What should flex?
 - [ ] Quality, quietly :: The worst option; it damages users and trust.

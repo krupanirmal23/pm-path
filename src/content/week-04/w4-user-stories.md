@@ -187,7 +187,7 @@ Q: What does Given / When / Then describe?
 - [ ] Sprint start, middle and end :: Not related to sprint timing.
 - [x] A starting situation, a user action, and the expected result :: Correct. It makes acceptance criteria testable.
 - [ ] The user, the goal and the benefit :: That’s the story format.
-- [ ] Priority levels :: Not related.
+- [ ] Priority levels :: Unrelated: Given/When/Then describes behaviour, not priority.
 
 Q: Which INVEST letter is broken by a story that takes 4 weeks to build?
 - [ ] Independent :: Possibly, but size is the clearest issue.
@@ -197,7 +197,7 @@ Q: Which INVEST letter is broken by a story that takes 4 weeks to build?
 
 Q: What is vertical slicing?
 - [ ] Building all screens first, then all backend work :: That’s horizontal slicing.
-- [x] Splitting work so each piece cuts through all layers and delivers something usable :: Correct.
+- [x] Splitting work so each piece cuts through all layers and delivers something usable :: Correct. Each slice can be demoed and tested by users, so feedback comes early.
 - [ ] Dividing a team into front-end and back-end :: That’s team structure, not slicing work.
 - [ ] Writing stories for each phone size :: Not what it means.
 
@@ -209,8 +209,8 @@ Q: Which acceptance criterion is best?
 
 Q: What is a Definition of Done?
 - [ ] The final acceptance criterion of each story :: AC are story-specific.
-- [x] A shared checklist every story must meet, like code review, tests, tracking and accessibility :: Correct.
-- [ ] The launch date :: Not related.
+- [x] A shared checklist every story must meet, like code review, tests, tracking and accessibility :: Correct. It keeps quality consistent across all stories without repeating it in each one.
+- [ ] The launch date :: Unrelated: Definition of Done is about quality checks, not dates.
 - [ ] The PM’s approval only :: It covers quality checks, not just approval.
 ```
 

@@ -168,32 +168,32 @@ GROUP BY first_order;
 ```quiz
 Q: What’s a behavioural cohort?
 - [ ] Users grouped by sign-up date :: That’s an acquisition cohort.
-- [x] Users grouped by something they did, like ordering twice in week 1 :: Correct.
+- [x] Users grouped by something they did, like ordering twice in week 1 :: Correct. Behavioural cohorts help find the actions linked to retention.
 - [ ] Users grouped by age :: That’s a demographic segment.
 - [ ] All users who churned :: A segment, but not specifically a behavioural cohort definition.
 
 Q: Users who rate orders retain better. Should you force everyone to rate?
 - [ ] Yes, it will raise retention :: Likely correlation, not causation.
-- [x] Not without an experiment; engaged users probably rate because they’re engaged :: Correct.
+- [x] Not without an experiment; engaged users probably rate because they’re engaged :: Correct. The behaviour may be a symptom of engagement, not its cause.
 - [ ] Yes, ratings are always good :: Forcing them may annoy users.
 - [ ] No, ratings never matter :: They might; you need evidence.
 
 Q: May cohort retention dropped, and May had a big paid campaign. What should you check first?
-- [ ] The app’s colour scheme :: Unlikely.
-- [x] Retention within each acquisition channel, to rule out mix shift :: Correct.
+- [ ] The app’s colour scheme :: Unlikely to explain a cohort retention drop; check mix shift first.
+- [x] Retention within each acquisition channel, to rule out mix shift :: Correct. If each channel is stable, the drop comes from a change in channel mix, not the product.
 - [ ] Total downloads :: Doesn’t explain retention.
 - [ ] Nothing; retention is random :: A drop deserves analysis.
 
 Q: A behaviour shows a 50-point retention gap, but only 30 users did it. What’s the issue?
 - [ ] None; the gap is huge :: Small groups produce unreliable rates.
-- [x] The group is too small to trust the result :: Correct.
+- [x] The group is too small to trust the result :: Correct. Rates from tiny groups swing wildly by chance.
 - [ ] The behaviour is too common :: The opposite problem.
 - [ ] You should only look at averages :: Not the issue.
 
 Q: You launched a nudge that doubled second orders. What’s the real success metric?
 - [ ] Second orders :: That’s the nudge’s direct effect, not the goal.
-- [x] Longer-term retention (e.g., week-4 ordering) vs. a control group :: Correct.
-- [ ] Number of notifications sent :: An output.
+- [x] Longer-term retention (e.g., week-4 ordering) vs. a control group :: Correct. The nudge only matters if it changes the outcome you care about, versus a fair comparison.
+- [ ] Number of notifications sent :: An output you control, not evidence that users benefited.
 - [ ] App store rating :: Not the primary outcome.
 ```
 

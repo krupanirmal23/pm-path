@@ -175,18 +175,18 @@ Q: Why do many PMs check retention before acquisition?
 
 Q: What makes a strong activation definition?
 - [ ] “User opened the app” :: Too shallow; doesn’t reflect value.
-- [x] A specific value action within a time window that predicts retention :: Correct.
-- [ ] “User is engaged” :: Vague.
+- [x] A specific value action within a time window that predicts retention :: Correct. It must reflect real value, be time-bound, and be linked to whether users stay.
+- [ ] “User is engaged” :: Too vague: “engaged” isn’t a specific, measurable action.
 - [ ] “User has a profile photo” :: Unlikely to reflect core value.
 
 Q: CAC is ₹800 and LTV is ₹500. What does this mean?
 - [ ] The business is healthy :: The opposite.
-- [x] Each new customer costs more to acquire than they bring in, so growth loses money :: Correct.
+- [x] Each new customer costs more to acquire than they bring in, so growth loses money :: Correct. With LTV below CAC, every acquisition rupee destroys value until economics improve.
 - [ ] Marketing should spend more :: That would increase losses.
 - [ ] Nothing; these metrics don’t matter :: They’re key unit economics.
 
 Q: When counting funnel steps, why count users instead of events?
-- [ ] Events can’t be counted :: They can.
+- [ ] Events can’t be counted :: They can; the issue is that event counts over-represent repeat actions.
 - [x] One user can trigger an event many times, inflating the numbers :: Correct. Funnels track the share of people progressing.
 - [ ] Users are easier to query :: Not the reason.
 - [ ] It doesn’t matter :: It matters a lot.

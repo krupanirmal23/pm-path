@@ -199,7 +199,7 @@ Q: For an aspirational (stretch) OKR, what score is usually considered good?
 Q: Why is linking OKRs directly to bonuses risky?
 - [ ] It makes OKRs harder to write :: Not the main risk.
 - [x] People set safe, easy targets to protect their pay, killing ambition and honesty :: Correct. OKRs work best as a focus and learning tool.
-- [ ] Bonuses are illegal in India :: They’re not.
+- [ ] Bonuses are illegal in India :: Bonuses are legal; the risk is the behaviour they encourage.
 - [ ] It makes OKRs public :: Not the issue.
 ```
 

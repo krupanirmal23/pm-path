@@ -40,7 +40,7 @@ describe('lesson content', () => {
         for (const q of quiz.questions) {
           expect(q.options.filter((o) => o.correct).length, q.q).toBe(1);
           expect(q.options.length, q.q).toBeGreaterThanOrEqual(3);
-          for (const o of q.options) expect(o.why.length, `${q.q} / ${o.text}`).toBeGreaterThan(5);
+          for (const o of q.options) expect(o.why.length, `${q.q} / ${o.text}`).toBeGreaterThan(12);
         }
       }
       expect(body.split('## Key takeaways')[1].match(/^- /gm)?.length).toBe(5);

@@ -162,24 +162,24 @@ A pre-launch experiment checklist:
 ```quiz
 Q: Why is peeking at results and stopping early a problem?
 - [ ] It slows down the test :: The opposite: it ends tests early.
-- [x] Random fluctuations often cross the significance line at some point, inflating false positives :: Correct.
+- [x] Random fluctuations often cross the significance line at some point, inflating false positives :: Correct. Repeated checks give chance many opportunities to look like a win.
 - [ ] Tools don’t allow it :: Most tools allow it, which is why it’s a trap.
 - [ ] It makes p-values bigger :: Not the issue.
 
 Q: A new feature’s lift is +8% on day 1 and +1% by day 14. What’s the likely explanation?
 - [ ] The test broke on day 14 :: Possible, but a decaying lift is classic novelty.
-- [x] Novelty effect: users tried it because it was new, then interest faded :: Correct.
+- [x] Novelty effect: users tried it because it was new, then interest faded :: Correct. A lift that decays day by day is the classic novelty signature.
 - [ ] Primacy effect :: Primacy shows lower early performance that improves.
 - [ ] Sample ratio mismatch :: SRM is about group sizes, not decay.
 
 Q: The primary metric was flat, but one of 25 segments shows a significant win. What should you do?
 - [ ] Ship to that segment immediately :: Likely a chance finding from multiple comparisons.
-- [x] Treat it as a hypothesis and test it in a new, focused experiment :: Correct.
-- [ ] Report the experiment as a success :: Misleading.
+- [x] Treat it as a hypothesis and test it in a new, focused experiment :: Correct. With many segments, some win by chance; a new test confirms or rejects it.
+- [ ] Report the experiment as a success :: Misleading: the primary metric didn’t move, so it wasn’t a success.
 - [ ] Ignore it completely :: It can be a useful lead.
 
 Q: Which situation is LEAST suitable for an A/B test?
-- [ ] Testing two checkout button labels on a high-traffic app :: Suitable.
+- [ ] Testing two checkout button labels on a high-traffic app :: Suitable: high traffic, low risk and easy to randomise.
 - [x] Fixing a crash that blocks payments on one Android version :: Correct. Just fix the bug.
 - [ ] Testing a new onboarding screen order :: Suitable with enough traffic.
 - [ ] Testing notification timing :: Suitable with guardrails.
@@ -187,13 +187,13 @@ Q: Which situation is LEAST suitable for an A/B test?
 Q: Why are marketplace experiments tricky?
 - [ ] Marketplaces have no users :: They have many.
 - [x] Treatment and control users share supply (drivers, sellers), so one group’s change affects the other :: Correct. That’s interference.
-- [ ] Marketplaces can’t track events :: They can.
+- [ ] Marketplaces can’t track events :: They can track events fine; interference is the real challenge.
 - [ ] Regulations ban them :: Not generally.
 
 Q: What is a holdout group used for?
 - [ ] Testing the variant faster :: Not its purpose.
-- [x] Measuring long-term effects by keeping a small group without the change for months :: Correct.
-- [ ] Storing backup data :: Unrelated.
+- [x] Measuring long-term effects by keeping a small group without the change for months :: Correct. Holdouts reveal effects that a 2-week test can’t see.
+- [ ] Storing backup data :: Unrelated: a holdout group is about users, not data backups.
 - [ ] Increasing sample size :: It reduces exposed users slightly.
 ```
 

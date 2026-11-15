@@ -193,7 +193,7 @@ Q: In the “diagnosis, guiding policy, coherent actions” structure, what is t
 Q: Why is “do what our biggest competitor does, but better” a weak strategy?
 - [ ] Competitors are never worth studying :: Studying them is useful; copying them isn’t a strategy.
 - [x] It gives users no distinct reason to switch and ignores your own advantages :: Correct. Strategy needs a reason you’ll win.
-- [ ] It’s illegal :: It isn’t.
+- [ ] It’s illegal :: Copying a strategy isn’t illegal; it’s just ineffective.
 - [ ] It’s too specific :: The issue is lack of differentiation, not specificity.
 ```
 

@@ -151,25 +151,25 @@ Q: What makes a statement a testable hypothesis?
 
 Q: What’s the null hypothesis in an A/B test?
 - [ ] The new version is better :: That’s the alternative.
-- [x] The change has no real effect; differences are due to chance :: Correct.
+- [x] The change has no real effect; differences are due to chance :: Correct. The test asks whether the data are surprising enough to reject this “no effect” assumption.
 - [ ] The test is broken :: Not what it means.
 - [ ] Users didn’t see the change :: Not what it means.
 
 Q: Why include the “because” in a hypothesis?
 - [ ] It sounds more convincing :: Not the main reason.
-- [x] It states the evidence and mechanism, so results teach you why something did or didn’t work :: Correct.
+- [x] It states the evidence and mechanism, so results teach you why something did or didn’t work :: Correct. Without a mechanism, a result tells you what happened but not why.
 - [ ] It’s required by analytics tools :: Not required by tools.
 - [ ] To blame users :: Hypotheses are about your change and its mechanism, not about assigning blame.
 
 Q: A team tracks 15 metrics and reports the 2 that went up. What’s the problem?
 - [ ] Nothing; good news is good :: This is metric fishing.
-- [x] With many metrics, some move by chance; the primary metric should be chosen in advance :: Correct.
+- [x] With many metrics, some move by chance; the primary metric should be chosen in advance :: Correct. Choosing after seeing results guarantees you’ll find “wins” that are noise.
 - [ ] They should track 30 metrics :: More metrics make it worse.
 - [ ] They should only report metrics that went down :: Not the point.
 
 Q: Why decide in advance what you’ll do for positive, flat and negative results?
 - [ ] To speed up the test :: It doesn’t change speed.
-- [x] To avoid rationalising results after the fact and to check the test can actually change a decision :: Correct.
+- [x] To avoid rationalising results after the fact and to check the test can actually change a decision :: Correct. Pre-set rules keep you honest and show whether the test is worth running.
 - [ ] Because statistics require it :: It’s good practice, not a formula requirement.
 - [ ] To impress stakeholders :: Not the goal.
 ```

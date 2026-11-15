@@ -268,7 +268,7 @@ Q: Which query returns only orders placed with UPI?
 
 Q: How do you find orders with no coupon code?
 - [ ] WHERE coupon_code = NULL :: Comparing with = NULL never matches.
-- [x] WHERE coupon_code IS NULL :: Correct.
+- [x] WHERE coupon_code IS NULL :: Correct. IS NULL is the only reliable way to test for missing values.
 - [ ] WHERE coupon_code = '' :: That matches empty text, not missing values.
 - [ ] WHERE NOT coupon_code :: Not reliable for NULL checks.
 
@@ -286,13 +286,13 @@ Q: What does `WHERE name LIKE '%Biryani%'` match?
 
 Q: In which order must these clauses appear?
 - [ ] SELECT, WHERE, FROM, ORDER BY :: FROM must come before WHERE.
-- [x] SELECT, FROM, WHERE, ORDER BY, LIMIT :: Correct.
+- [x] SELECT, FROM, WHERE, ORDER BY, LIMIT :: Correct. This is the required written order of these clauses.
 - [ ] FROM, SELECT, LIMIT, WHERE :: Not valid SQL.
 - [ ] SELECT, ORDER BY, WHERE, FROM :: Not valid SQL.
 
 Q: Why check `SELECT DISTINCT city FROM users` before filtering by city?
 - [ ] It’s required syntax :: It isn’t required.
-- [x] To see the exact spellings used, so your WHERE clause matches :: Correct.
+- [x] To see the exact spellings used, so your WHERE clause matches :: Correct. A filter on 'Bangalore' returns nothing if the data says 'Bengaluru'.
 - [ ] It speeds up later queries :: Not meaningfully.
 - [ ] To delete duplicates :: SELECT never deletes data.
 ```

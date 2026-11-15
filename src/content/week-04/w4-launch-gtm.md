@@ -157,7 +157,7 @@ Writing your 1-page P1 launch plan:
 ```quiz
 Q: What does go-to-market cover?
 - [ ] Only the advertising budget :: GTM is much broader.
-- [x] Audience, message, channels, timing, enablement and success metrics for reaching users :: Correct.
+- [x] Audience, message, channels, timing, enablement and success metrics for reaching users :: Correct. GTM is the full plan for getting the right users to adopt successfully.
 - [ ] Only the engineering release :: That’s the technical release, not GTM.
 - [ ] Only pricing :: Pricing is one part, sometimes.
 
@@ -181,7 +181,7 @@ Q: Adoption of a new feature is low. People try it once but don’t return. Whic
 
 Q: Why should support be trained before launch?
 - [ ] Support teams like training :: Not the reason.
-- [x] So they can answer user questions and escalate issues from day one :: Correct.
+- [x] So they can answer user questions and escalate issues from day one :: Correct. Prepared support turns launch-day confusion into quick answers instead of angry reviews.
 - [ ] It’s legally required :: Not generally.
 - [ ] To reduce engineering work :: A side effect at most.
 

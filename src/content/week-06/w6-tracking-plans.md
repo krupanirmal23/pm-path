@@ -179,20 +179,20 @@ User properties: `trader_segment` (investor/active), `platform`, `account_age_da
 ```quiz
 Q: What is an event property?
 - [ ] A fact about the user that rarely changes :: That’s a user property.
-- [x] A detail about a specific event, such as order_value or payment_method :: Correct.
+- [x] A detail about a specific event, such as order_value or payment_method :: Correct. Properties let you break down and filter events.
 - [ ] The name of the event :: That’s the event name.
 - [ ] The analytics tool used :: Not a property.
 
 Q: Which event naming is best?
 - [ ] ClickedUPIButton :: Value in the name, inconsistent case.
-- [ ] event_17 :: Meaningless.
+- [ ] event_17 :: Meaningless: nobody can tell what this event measures.
 - [x] payment_method_selected with a property method = upi :: Correct. One event, details in properties.
-- [ ] upi :: Too vague.
+- [ ] upi :: Too vague: it doesn’t describe an action or an object.
 
 Q: Why track order completion server-side?
 - [ ] Server events are cheaper :: Not the main reason.
-- [x] They’re more reliable for business-critical outcomes; client events can be blocked, lost or duplicated :: Correct.
-- [ ] Client events can’t include properties :: They can.
+- [x] They’re more reliable for business-critical outcomes; client events can be blocked, lost or duplicated :: Correct. The server knows for sure whether an order or payment happened.
+- [ ] Client events can’t include properties :: They can include properties; reliability is the real difference.
 - [ ] Analytics tools only accept server events :: They accept both.
 
 Q: Which should NOT be sent as an analytics event property?
@@ -203,9 +203,9 @@ Q: Which should NOT be sent as an analytics event property?
 
 Q: Why define a precise trigger for each event?
 - [ ] To make the tracking plan longer :: Not the reason.
-- [x] So every platform fires it at the same moment, keeping numbers consistent :: Correct.
+- [x] So every platform fires it at the same moment, keeping numbers consistent :: Correct. Precise triggers stop Android and iOS from counting different things under the same name.
 - [ ] Because analytics tools require it :: They don’t; consistency does.
-- [ ] To reduce app size :: Unrelated.
+- [ ] To reduce app size :: Unrelated: trigger definitions affect data consistency, not app size.
 
 Q: What’s the first step in writing a tracking plan?
 - [ ] List every button in the app :: That leads to tracking everything.

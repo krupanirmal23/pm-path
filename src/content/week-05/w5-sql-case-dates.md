@@ -287,7 +287,7 @@ Q: In a CASE expression, which condition is used when several are true?
 
 Q: What does `SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END)` compute?
 - [ ] Total order value :: It adds 1s and 0s, not values.
-- [x] The number of cancelled orders :: Correct.
+- [x] The number of cancelled orders :: Correct. Each cancelled row adds 1 and every other row adds 0, so the sum is the count.
 - [ ] The cancellation rate :: Divide by COUNT(*) for the rate.
 - [ ] The number of statuses :: Not what it does.
 
@@ -295,12 +295,12 @@ Q: In SQLite, how do you get the month (like '2025-03') from order_ts?
 - [ ] MONTH(order_ts) :: Not a SQLite function.
 - [x] strftime('%Y-%m', order_ts) :: Correct. substr(order_ts, 1, 7) also works.
 - [ ] DATE_TRUNC('month', order_ts) :: That’s PostgreSQL/BigQuery style.
-- [ ] order_ts / 12 :: Not valid.
+- [ ] order_ts / 12 :: Not valid: dividing a text timestamp by 12 doesn’t produce a month.
 
 Q: Why use LEFT JOIN when calculating “% of users who ordered within 7 days”?
 - [ ] It’s faster :: Not the reason.
 - [x] So users who never ordered stay in the denominator :: Correct. INNER JOIN would drop them and inflate the rate.
-- [ ] Because INNER JOIN doesn’t work with dates :: It does.
+- [ ] Because INNER JOIN doesn’t work with dates :: INNER JOIN works with dates; the problem is it drops non-ordering users.
 - [ ] It isn’t necessary :: It is, for a correct rate.
 
 Q: Why `CAST(strftime('%H', order_ts) AS INTEGER) >= 22` instead of comparing the text?
@@ -312,8 +312,8 @@ Q: Why `CAST(strftime('%H', order_ts) AS INTEGER) >= 22` instead of comparing th
 Q: In a funnel query, why use COUNT(DISTINCT CASE WHEN … THEN user_id END)?
 - [ ] To count events :: That would over-count repeat actions.
 - [x] To count unique users who did each step :: Correct. NULLs from the CASE are ignored.
-- [ ] To remove the WHERE clause :: Unrelated.
-- [ ] To sort steps :: Unrelated.
+- [ ] To remove the WHERE clause :: Unrelated: the CASE trick is about counting, not filtering.
+- [ ] To sort steps :: Unrelated: sorting is done by ORDER BY, not by COUNT(DISTINCT …).
 ```
 
 ## Key takeaways

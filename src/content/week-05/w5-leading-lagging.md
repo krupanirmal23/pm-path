@@ -143,12 +143,12 @@ Defining the metric set for your P1 feature:
 Q: Which is a lagging metric?
 - [ ] % of new users who complete onboarding today :: Leading: fast-moving and predictive.
 - [x] Annual revenue :: Correct. It reflects results after the fact and moves slowly.
-- [ ] Add-to-cart rate this week :: Leading.
-- [ ] First-week orders per new user :: Leading.
+- [ ] Add-to-cart rate this week :: A leading metric: it moves fast and predicts later orders and revenue.
+- [ ] First-week orders per new user :: A leading metric: it’s an early signal of later retention.
 
 Q: What makes a leading metric useful?
 - [ ] It’s easy to increase :: Easy-to-move metrics can be meaningless.
-- [x] It moves quickly and reliably predicts the lagging outcome you care about :: Correct.
+- [x] It moves quickly and reliably predicts the lagging outcome you care about :: Correct. Speed lets you steer; predictive power makes steering worthwhile.
 - [ ] It’s reported to investors :: Not the criterion.
 - [ ] It’s the same as the North Star :: Not necessarily.
 
@@ -159,14 +159,14 @@ Q: Which is the best guardrail for a feature aiming to increase sign-ups?
 - [ ] Brand colour consistency :: Not measurable in this context.
 
 Q: What does Goodhart’s law warn about?
-- [ ] Metrics are always wrong :: Too strong.
-- [x] When a measure becomes a target, people find ways to move it that don’t reflect real value :: Correct.
+- [ ] Metrics are always wrong :: Too strong: Goodhart’s law is about targets being gamed, not metrics being wrong.
+- [x] When a measure becomes a target, people find ways to move it that don’t reflect real value :: Correct. Guardrails and lagging checks protect against this gaming.
 - [ ] Leading metrics are always better than lagging ones :: Not what it says.
 - [ ] Metrics should be secret :: Not what it says.
 
 Q: Users who order 3 times in 14 days retain 4x better. What should you do before investing heavily in pushing a third order?
 - [ ] Nothing; correlation is enough :: Correlation may not be causation.
-- [x] Test whether causing a third order actually improves retention, e.g., with an experiment :: Correct.
+- [x] Test whether causing a third order actually improves retention, e.g., with an experiment :: Correct. The link may be correlation; only an experiment shows whether pushing it causes retention.
 - [ ] Give everyone a huge discount on a third order :: Might buy orders that don’t lead to retention.
 - [ ] Ignore the finding :: It’s a promising hypothesis worth testing.
 ```

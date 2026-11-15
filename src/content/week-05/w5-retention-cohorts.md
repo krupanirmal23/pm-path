@@ -167,19 +167,19 @@ Running a cohort analysis (in Sheets or SQL):
 ```quiz
 Q: What is a cohort?
 - [ ] All users of the product :: That’s the whole user base.
-- [x] A group of users who share a starting characteristic, such as sign-up month :: Correct.
+- [x] A group of users who share a starting characteristic, such as sign-up month :: Correct. Grouping by start time lets you compare groups at the same age.
 - [ ] A group of power users :: That’s a segment, not necessarily a cohort.
-- [ ] A team of analysts :: Not related.
+- [ ] A team of analysts :: Unrelated: in analytics, a cohort is a group of users, not staff.
 
 Q: In a cohort table, what does reading down a column tell you?
 - [ ] How one cohort decays over time :: That’s reading across a row.
-- [x] Whether newer cohorts retain better or worse at the same age :: Correct.
+- [x] Whether newer cohorts retain better or worse at the same age :: Correct. Columns compare cohorts at the same point in their life, showing whether the product improved.
 - [ ] Total revenue :: Not shown in a retention table.
-- [ ] The number of features shipped :: Not shown.
+- [ ] The number of features shipped :: A retention table shows user retention, not features shipped.
 
 Q: A retention curve drops quickly and then flattens at 25%. What does it suggest?
 - [ ] No product–market fit :: That would be a curve heading to zero.
-- [x] A core group keeps getting value, which is a sign of product–market fit :: Correct.
+- [x] A core group keeps getting value, which is a sign of product–market fit :: Correct. A flat floor means some users find lasting value; raising that floor is the goal.
 - [ ] The data is wrong :: Flattening is a common, healthy shape.
 - [ ] Users are resurrecting :: That would be an upward “smile”.
 
@@ -190,7 +190,7 @@ Q: Overall weekly orders rose 20%, but the newest cohorts retain much worse. Wha
 - [ ] Old users are leaving :: The data points to new users leaving.
 
 Q: Monthly churn for a subscription is 5%. Roughly what share of subscribers remain after 12 months without new sign-ups?
-- [ ] 40% :: Too low.
+- [ ] 40% :: Too low: 0.95 multiplied by itself 12 times is about 0.54, not 0.40.
 - [x] About 54% :: Correct. 0.95^12 ≈ 0.54.
 - [ ] 60% :: That would be simple subtraction (100 − 12 × 5 + …); churn compounds.
 - [ ] 95% :: That’s one month.

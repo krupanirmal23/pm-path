@@ -206,7 +206,7 @@ Q: What does a “reverse” feature mean?
 - [ ] A feature that works backwards :: Not what it means.
 - [x] A feature some users actively dislike having :: Correct. Presence lowers their satisfaction.
 - [ ] A feature that was removed :: Not what it means.
-- [ ] A feature that only works offline :: Not related.
+- [ ] A feature that only works offline :: Unrelated: “reverse” describes how users feel about a feature, not where it works.
 ```
 
 ## Key takeaways

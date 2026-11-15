@@ -186,7 +186,7 @@ Q: Which is a well-written requirement?
 
 Q: Why include non-goals?
 - [ ] To list features for next year :: Non-goals aren’t a future roadmap.
-- [x] To make clear what’s out of scope and prevent scope creep and debate :: Correct.
+- [x] To make clear what’s out of scope and prevent scope creep and debate :: Correct. Non-goals stop the same scope arguments from returning every week.
 - [ ] To show the PM is busy :: Not the purpose.
 - [ ] Because templates require them :: They’re useful, not just required.
 
@@ -198,7 +198,7 @@ Q: Which is an edge case for a UPI settle-up feature?
 
 Q: What does “p90 latency under 2 seconds” mean?
 - [ ] The average is 2 seconds :: Average and p90 differ.
-- [x] 90% of requests complete in 2 seconds or less :: Correct.
+- [x] 90% of requests complete in 2 seconds or less :: Correct. p90 means 90% of requests are at or below that value; the slowest 10% may be slower.
 - [ ] 90 requests per second :: That’s throughput.
 - [ ] The slowest request takes 2 seconds :: That would be the maximum (p100).
 

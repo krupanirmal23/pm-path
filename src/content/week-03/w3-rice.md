@@ -191,7 +191,7 @@ Q: Idea A: reach 10,000, impact 2, confidence 80%, effort 2. What’s its RICE s
 
 Q: Why must effort estimates come from engineers and designers?
 - [ ] PMs aren’t allowed to estimate :: There’s no rule; it’s about accuracy.
-- [x] They do the work and understand the real complexity, so estimates are more accurate and owned by the team :: Correct.
+- [x] They do the work and understand the real complexity, so estimates are more accurate and owned by the team :: Correct. People doing the work see hidden complexity, and estimates they own are ones they’ll stand behind.
 - [ ] RICE requires it by definition :: It doesn’t, but good practice does.
 - [ ] Engineers prefer high estimates :: Not the reason.
 
@@ -205,7 +205,7 @@ Q: Which is a known limitation of RICE?
 - [ ] It ignores how many people are affected :: Reach covers that.
 - [x] It doesn’t capture dependencies or strategic importance well :: Correct. Sanity-check the ranking for these.
 - [ ] It can’t compare more than three ideas :: It can compare any number.
-- [ ] It requires an A/B test for each idea :: It doesn’t.
+- [ ] It requires an A/B test for each idea :: It doesn’t; RICE uses estimates, though tests can raise confidence.
 
 Q: Your scores rank a small UI tweak above the core strategic bet. What’s the best response?
 - [ ] Always follow the score :: Scores are inputs, not verdicts.

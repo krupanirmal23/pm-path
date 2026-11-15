@@ -181,25 +181,25 @@ Q: How should items in the Later column usually be described?
 
 Q: Why group roadmap items under goals?
 - [ ] To make the roadmap longer :: Not the purpose.
-- [x] So every item connects to an outcome, and items can be swapped if they don’t move the goal :: Correct.
+- [x] So every item connects to an outcome, and items can be swapped if they don’t move the goal :: Correct. Goals give items a reason to exist and make swapping bets easy without losing direction.
 - [ ] Because goals are required by agile :: Not a rule of agile.
 - [ ] To hide features from stakeholders :: Not the intent.
 
 Q: Sales wants to tell a client a “Later” item will ship in Q3. What should you say?
 - [ ] Yes, promise it :: Later items are uncertain; promising risks broken trust.
-- [x] Explain it’s being explored, share the problem you’re investigating, and avoid a date commitment :: Correct.
+- [x] Explain it’s being explored, share the problem you’re investigating, and avoid a date commitment :: Correct. Honest framing keeps trust with the client and avoids a promise you may not keep.
 - [ ] Remove it from the roadmap :: Hiding it doesn’t help.
 - [ ] Ignore the request :: Close the loop clearly instead.
 
 Q: How often should a roadmap be reviewed?
 - [ ] Once a year :: Too slow; learning happens faster.
-- [x] At least monthly and after major learning :: Correct.
+- [x] At least monthly and after major learning :: Correct. Regular reviews keep the roadmap matched to what the team has learned.
 - [ ] Never; it’s a commitment :: Roadmaps should adapt.
 - [ ] Daily :: Too frequent to be useful for communication.
 
 Q: Your Now column has 15 items for a 5-person team for one month. What’s the problem?
 - [ ] Nothing; ambition is good :: Unrealistic plans erode trust.
-- [x] It’s overloaded; Now should only hold what the team can realistically do :: Correct.
+- [x] It’s overloaded; Now should only hold what the team can realistically do :: Correct. An overloaded Now column is a wish list, and it will erode trust when it slips.
 - [ ] It should have 30 items :: Even more unrealistic.
 - [ ] Items should have dates :: Dates don’t fix overload.
 ```

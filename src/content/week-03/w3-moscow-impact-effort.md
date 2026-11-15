@@ -185,7 +185,7 @@ Q: An idea is high impact and low effort. Which quadrant is it?
 
 Q: What should you do with a “big bet” (high impact, high effort)?
 - [ ] Build it immediately in full :: High effort means high risk; de-risk first.
-- [x] Plan carefully, test the riskiest assumptions, and break it into smaller slices :: Correct.
+- [x] Plan carefully, test the riskiest assumptions, and break it into smaller slices :: Correct. High impact justifies the effort, but high effort means risk, so de-risk and slice before committing fully.
 - [ ] Avoid it entirely :: High impact makes it worth pursuing carefully.
 - [ ] Move it to “Could have” :: Category depends on the release, not the 2x2 alone.
 
@@ -198,7 +198,7 @@ Q: Roughly what share of effort should Musts take in a MoSCoW-scoped release?
 Q: When is MoSCoW a better choice than RICE?
 - [ ] Ranking 30 ideas for a yearly roadmap :: RICE is better for detailed ranking.
 - [x] Scoping a release with a fixed deadline :: Correct. MoSCoW decides what’s in and out for a time box.
-- [ ] Understanding what delights users :: That’s Kano.
+- [ ] Understanding what delights users :: That’s what the Kano model is for, not MoSCoW.
 - [ ] Estimating market size :: Neither tool does that.
 ```
 

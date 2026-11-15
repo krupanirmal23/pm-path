@@ -164,7 +164,7 @@ Q: In Scrum, who decides how much work fits into a sprint?
 - [ ] The scrum master alone :: The scrum master facilitates; they don’t decide capacity.
 
 Q: What’s the purpose of a WIP limit in kanban?
-- [ ] To limit the number of team members :: Not related.
+- [ ] To limit the number of team members :: Unrelated: WIP limits cap work items, not people.
 - [x] To cap work in progress so the team finishes items before starting new ones :: Correct. It reduces multitasking and bottlenecks.
 - [ ] To limit the number of bugs :: Not directly.
 - [ ] To set sprint length :: Kanban doesn’t use sprints.
@@ -177,7 +177,7 @@ Q: Which ceremony focuses on improving how the team works?
 
 Q: Why is comparing velocity across teams a bad idea?
 - [ ] Velocity is secret :: It’s not secret.
-- [x] Each team sizes story points differently, so the numbers aren’t comparable :: Correct.
+- [x] Each team sizes story points differently, so the numbers aren’t comparable :: Correct. A “5” in one team isn’t a “5” in another; velocity is only meaningful within a team.
 - [ ] Velocity is always the same :: It varies by team and over time.
 - [ ] Velocity measures quality :: It measures completed estimated work, not quality.
 
@@ -189,7 +189,7 @@ Q: Which team is the best fit for kanban?
 
 Q: What should a PM do with a new non-urgent request mid-sprint?
 - [ ] Add it to the current sprint immediately :: Disrupts focus and commitments.
-- [x] Add it to the product backlog and prioritise it for a future sprint :: Correct.
+- [x] Add it to the product backlog and prioritise it for a future sprint :: Correct. Capturing it protects the current sprint’s focus while making sure the request isn’t lost.
 - [ ] Ignore it :: Always capture and respond.
 - [ ] Ask the team to work weekends :: Not sustainable or fair.
 ```

@@ -161,7 +161,7 @@ Backlog (ordered): Upload up to 20 photos (5) · Auto-detect product category fr
 ```quiz
 Q: Why do teams often use a Fibonacci-like scale (1, 2, 3, 5, 8, 13) for story points?
 - [ ] It’s easier to add up :: Not the reason.
-- [x] Growing gaps reflect growing uncertainty in larger work :: Correct.
+- [x] Growing gaps reflect growing uncertainty in larger work :: Correct. Small items can be sized precisely; big items can’t, and the scale reflects that honestly.
 - [ ] Fibonacci is required by Scrum :: Scrum doesn’t prescribe estimation methods.
 - [ ] It converts directly to hours :: Points deliberately avoid hours.
 
@@ -186,8 +186,8 @@ Q: What does the cone of uncertainty suggest?
 Q: What is a feature flag?
 - [ ] A bug report label :: Not what it means.
 - [x] A switch that turns a feature on or off without releasing new code :: Correct. Useful for shipping incomplete or risky work safely.
-- [ ] A marketing banner :: Not related.
-- [ ] A Jira priority field :: Not related.
+- [ ] A marketing banner :: Unrelated: a feature flag is a technical switch, not a marketing asset.
+- [ ] A Jira priority field :: Unrelated: priority fields order work; flags control what users see.
 ```
 
 ## Key takeaways

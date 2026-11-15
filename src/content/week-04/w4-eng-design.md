@@ -172,7 +172,7 @@ Kicking off P1’s feature with an (imagined or real) trio:
 ```quiz
 Q: Who typically owns the technical approach in a product team?
 - [ ] The PM :: The PM owns problem and priority, not technical approach.
-- [x] The engineering lead and engineers :: Correct.
+- [x] The engineering lead and engineers :: Correct. Engineers own the how: architecture, tools and implementation, within the constraints the PM shares.
 - [ ] The designer :: Designers own the experience.
 - [ ] The CEO :: Not typically.
 
@@ -190,13 +190,13 @@ Q: The designer and engineer disagree about a visual detail. Who should decide?
 
 Q: Which behaviour builds trust with engineers fastest?
 - [ ] Changing priorities often to show flexibility :: Constant changes erode trust.
-- [x] Giving fast, clear decisions and explaining the why :: Correct.
+- [x] Giving fast, clear decisions and explaining the why :: Correct. Quick, reasoned decisions unblock the team and show respect for their time and judgment.
 - [ ] Telling them how to code features :: Undermines their ownership.
 - [ ] Taking credit for launches :: Damages trust.
 
 Q: You disagree with your tech lead and can’t resolve it. What’s the best next step?
 - [ ] Go to their manager without telling them :: Going around people destroys trust.
-- [x] Write up the options together and escalate jointly :: Correct.
+- [x] Write up the options together and escalate jointly :: Correct. A shared, fair summary keeps trust intact and lets managers decide quickly.
 - [ ] Do it your way anyway :: Damages the relationship.
 - [ ] Drop the topic forever :: Unresolved issues return later.
 ```

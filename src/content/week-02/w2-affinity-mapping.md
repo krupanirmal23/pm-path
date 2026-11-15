@@ -213,7 +213,7 @@ Q: Which theme name is best?
 Q: How should you handle a note that contradicts your main hypothesis?
 - [ ] Remove it to keep the story clean :: That’s confirmation bias.
 - [x] Keep it and explore it; it may reveal a segment or a flaw in your thinking :: Correct. Contradictions are valuable.
-- [ ] Ask the participant to change their answer :: Never.
+- [ ] Ask the participant to change their answer :: Never do this: it corrupts the evidence. Participants’ words are the data.
 - [ ] Count it as supporting evidence anyway :: That misrepresents the data.
 
 Q: What should each theme in your discovery report include?

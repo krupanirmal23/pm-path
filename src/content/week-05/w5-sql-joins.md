@@ -241,7 +241,7 @@ ORDER BY delivered_orders DESC;
 ```quiz
 Q: What does an INNER JOIN between users and orders return?
 - [ ] All users, even those without orders :: That’s a LEFT JOIN (users on the left).
-- [x] Only rows where a user has a matching order :: Correct.
+- [x] Only rows where a user has a matching order :: Correct. INNER JOIN keeps only matches on both sides.
 - [ ] All orders and all users, unmatched :: That would be a FULL OUTER JOIN.
 - [ ] Only users without orders :: That’s a LEFT JOIN with IS NULL.
 
@@ -259,7 +259,7 @@ Q: After joining orders to order_items, SUM(o.total) looks too high. Why?
 
 Q: Why use table aliases like `o` and `u`?
 - [ ] They make queries run faster :: Not meaningfully.
-- [x] They shorten queries and make it clear which table each column comes from :: Correct.
+- [x] They shorten queries and make it clear which table each column comes from :: Correct. Aliases prevent ambiguity when several tables share column names.
 - [ ] They’re required in every query :: Optional, but strongly recommended with joins.
 - [ ] They rename tables permanently :: Aliases only apply inside the query.
 
@@ -271,7 +271,7 @@ Q: You LEFT JOIN users to orders and add `WHERE o.status = 'delivered'`. What ha
 
 Q: In the playground, which key connects order_items to orders?
 - [ ] order_items.user_id = orders.user_id :: order_items has no user_id column.
-- [x] order_items.order_id = orders.order_id :: Correct.
+- [x] order_items.order_id = orders.order_id :: Correct. order_id is the foreign key linking each item to its order.
 - [ ] order_items.restaurant_id = orders.restaurant_id :: order_items has no restaurant_id column.
 - [ ] order_items.item_name = orders.order_id :: Not a key relationship.
 ```

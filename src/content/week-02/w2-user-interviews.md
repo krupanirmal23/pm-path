@@ -199,7 +199,7 @@ Q: You notice you’ve been talking for most of the interview. What’s the like
 Q: Which is a leading question?
 - [ ] What did you do after the payment failed? :: Neutral and open.
 - [x] Wasn’t it annoying when the payment failed? :: Correct. It suggests the answer you expect.
-- [ ] How did you pay for your last order? :: Neutral.
+- [ ] How did you pay for your last order? :: Neutral and specific: it asks about real past behaviour without suggesting an answer.
 - [ ] Walk me through the checkout step by step :: Neutral and open.
 
 Q: After how many interviews should you usually start seeing repeated patterns for one user type?

@@ -186,7 +186,7 @@ Q: What does the word “might” do in “How might we”?
 - [ ] Means the team might not work on it :: Not its purpose.
 
 Q: Which HMW is the right size?
-- [ ] HMW make investing better? :: Too broad.
+- [ ] HMW make investing better? :: Too broad: it could mean anything, so it gives the team no direction.
 - [ ] HMW add a tooltip to the SIP button? :: Too narrow; a solution in disguise.
 - [x] HMW help new investors stay calm during their first market drop? :: Correct. Specific need, many possible solutions.
 - [ ] HMW increase revenue? :: A business goal, not a user-centred HMW.

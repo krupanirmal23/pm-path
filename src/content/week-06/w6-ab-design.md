@@ -181,19 +181,19 @@ Designing your P2 experiment:
 ```quiz
 Q: What does randomisation achieve in an A/B test?
 - [ ] It makes the test faster :: Not its purpose.
-- [x] It makes groups comparable, so differences can be attributed to the change :: Correct.
+- [x] It makes groups comparable, so differences can be attributed to the change :: Correct. Random assignment balances everything except the change itself.
 - [ ] It guarantees a positive result :: It guarantees nothing about the result.
 - [ ] It removes the need for sample size :: You still need enough users.
 
 Q: What’s the correct interpretation of p = 0.04?
 - [ ] There’s a 96% chance the variant is better :: A common but wrong interpretation.
-- [x] If there were no real effect, a difference this large would occur about 4% of the time :: Correct.
+- [x] If there were no real effect, a difference this large would occur about 4% of the time :: Correct. The p-value describes the data under “no effect”, not the chance the variant works.
 - [ ] The effect is 4% :: The p-value isn’t the effect size.
-- [ ] 4% of users saw the variant :: Unrelated.
+- [ ] 4% of users saw the variant :: Unrelated: the p-value says nothing about how many users saw the variant.
 
 Q: What is statistical power?
 - [ ] The size of the effect :: That’s effect size.
-- [x] The probability of detecting a real effect of a given size if it exists :: Correct.
+- [x] The probability of detecting a real effect of a given size if it exists :: Correct. With 80% power, a real effect of your MDE is detected 4 times out of 5.
 - [ ] The probability of a false positive :: That’s alpha.
 - [ ] The number of users in the test :: Sample size affects power but isn’t power.
 
@@ -205,9 +205,9 @@ Q: You halve your minimum detectable effect. Roughly what happens to the sample 
 
 Q: Why run tests for at least one full week?
 - [ ] Statistics require 7 days :: Not a formula requirement.
-- [x] To capture weekday and weekend behaviour differences :: Correct.
-- [ ] Because tools can’t stop earlier :: They can.
-- [ ] To get a bigger p-value :: Not a goal.
+- [x] To capture weekday and weekend behaviour differences :: Correct. Partial weeks over- or under-represent certain days and can bias results.
+- [ ] Because tools can’t stop earlier :: Tools can stop anytime; full weeks are about behaviour patterns.
+- [ ] To get a bigger p-value :: Not a goal: you never aim for a particular p-value.
 
 Q: You planned a 50/50 split but see 53,000 vs. 47,000 users. What should you do?
 - [ ] Ignore it; close enough :: With large numbers, this is a significant imbalance.

@@ -170,13 +170,13 @@ Q: Which breakdown of “active customers” is a proper formula?
 
 Q: Why add values to a metric tree?
 - [ ] To make it look complex :: Not the purpose.
-- [x] To see which branches have the biggest gaps and opportunities :: Correct.
+- [x] To see which branches have the biggest gaps and opportunities :: Correct. Numbers turn the tree from a picture into a prioritisation tool.
 - [ ] Because trees must have numbers by definition :: They’re useful without numbers, but much better with them.
 - [ ] To replace dashboards :: Trees complement dashboards.
 
 Q: How deep should a metric tree usually go?
 - [ ] One level :: Too shallow to act on.
-- [x] 3–4 levels, until leaves are actionable :: Correct.
+- [x] 3–4 levels, until leaves are actionable :: Correct. Deep enough that a team can act on each leaf, shallow enough to stay readable.
 - [ ] 10+ levels :: Becomes unreadable and too granular.
 - [ ] As deep as possible :: Depth without purpose adds noise.
 ```

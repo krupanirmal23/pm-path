@@ -247,7 +247,7 @@ ORDER BY month;
 ```quiz
 Q: What does `COUNT(DISTINCT user_id)` return?
 - [ ] The number of orders :: That would be COUNT(*).
-- [x] The number of unique users :: Correct.
+- [x] The number of unique users :: Correct. DISTINCT removes duplicate user_ids before counting.
 - [ ] The largest user_id :: That would be MAX(user_id).
 - [ ] The number of NULL user_ids :: Not what it counts.
 
@@ -264,22 +264,22 @@ Q: Why write `100.0 * AVG(status = 'cancelled')` instead of `100 * …`?
 - [ ] It doesn’t matter in any database :: It matters in many databases.
 
 Q: Which query is invalid (or unreliable) SQL?
-- [ ] SELECT city, COUNT(*) FROM users GROUP BY city :: Valid.
+- [ ] SELECT city, COUNT(*) FROM users GROUP BY city :: Valid: city is grouped and COUNT(*) is an aggregate.
 - [x] SELECT city, name, COUNT(*) FROM users GROUP BY city :: Correct. `name` isn’t grouped or aggregated.
-- [ ] SELECT COUNT(*) FROM users :: Valid.
-- [ ] SELECT city, platform, COUNT(*) FROM users GROUP BY city, platform :: Valid.
+- [ ] SELECT COUNT(*) FROM users :: Valid: an aggregate over the whole table needs no GROUP BY.
+- [ ] SELECT city, platform, COUNT(*) FROM users GROUP BY city, platform :: Valid: both selected columns are in GROUP BY.
 
 Q: `AVG(delivery_minutes)` when cancelled orders have NULL delivery_minutes:
 - [ ] Treats NULLs as 0 :: AVG ignores NULLs.
-- [x] Ignores the NULL rows and averages the rest :: Correct.
+- [x] Ignores the NULL rows and averages the rest :: Correct. AVG skips NULLs, so cancelled orders don’t drag the average to zero.
 - [ ] Returns NULL for the whole result :: Only if all values are NULL.
-- [ ] Throws an error :: It doesn’t.
+- [ ] Throws an error :: It doesn’t error; AVG simply skips NULL values.
 
 Q: What’s the logical order of execution?
 - [ ] SELECT → FROM → WHERE → GROUP BY :: SELECT is evaluated later.
-- [x] FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY :: Correct.
-- [ ] GROUP BY → WHERE → FROM → SELECT :: Not valid.
-- [ ] WHERE → HAVING → GROUP BY → FROM :: Not valid.
+- [x] FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY :: Correct. That’s why you can’t use a SELECT alias in WHERE in most databases.
+- [ ] GROUP BY → WHERE → FROM → SELECT :: Not valid: FROM must come first, and WHERE runs before GROUP BY.
+- [ ] WHERE → HAVING → GROUP BY → FROM :: Not valid: HAVING filters groups, so it must come after GROUP BY.
 ```
 
 ## Key takeaways

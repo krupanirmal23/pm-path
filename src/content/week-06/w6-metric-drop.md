@@ -192,8 +192,8 @@ Q: The drop is concentrated in Android app version 8.3 only. What’s most likel
 - [ ] Competitor promotion :: Would affect all versions.
 
 Q: Which is the best first step when told “DAU dropped 10%”?
-- [ ] Announce a rollback :: Too early.
-- [x] Clarify the metric definition, comparison period and whether it’s outside normal variation :: Correct.
+- [ ] Announce a rollback :: Too early: you don’t yet know whether the drop is real or what caused it.
+- [x] Clarify the metric definition, comparison period and whether it’s outside normal variation :: Correct. You can’t diagnose a drop until you know exactly what dropped and whether it’s unusual.
 - [ ] Email all users :: Not appropriate.
 - [ ] Blame marketing :: Not structured.
 
@@ -211,8 +211,8 @@ Q: Why consider cricket matches when diagnosing a food app metric in India?
 
 Q: What makes a hypothesis useful in a metric-drop investigation?
 - [ ] It sounds plausible :: Plausibility isn’t enough.
-- [x] It fits the timing and segment evidence and has a clear test to confirm or reject it :: Correct.
-- [ ] It blames another team :: Not useful.
+- [x] It fits the timing and segment evidence and has a clear test to confirm or reject it :: Correct. Testable hypotheses that match the evidence let you converge quickly.
+- [ ] It blames another team :: Not useful: blame doesn’t help you test or fix anything.
 - [ ] It requires a big experiment :: Prefer quick data checks first.
 ```
 
