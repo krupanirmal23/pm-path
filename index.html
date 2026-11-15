@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PM Path: a self-contained 14-week roadmap from zero to job-ready for APM, PM and AI PM roles." />
+    <meta name="theme-color" content="#FFF8EE" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <title>PM Path</title>
+    <script>
+      try {
+        var t = JSON.parse(localStorage.getItem('pm-path-state') || '{}');
+        var th = t && t.state && t.state.settings && t.state.settings.theme;
+        if (th === 'dark' || (th !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
