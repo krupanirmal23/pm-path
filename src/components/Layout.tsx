@@ -165,14 +165,14 @@ export function Layout() {
           {!collapsed && (
             <>
               <span className="flex-1">Search…</span>
-              <kbd className="rounded border border-line/40 px-1 text-[0.7rem]">⌘K</kbd>
+              <kbd className="rounded border border-line/40 px-1 text-xs">⌘K</kbd>
             </>
           )}
         </button>
         <nav className="scrollbar-thin flex-1 overflow-y-auto px-3 pb-3">
           {NAV.map((g) => (
             <div key={g.group} className="mb-3">
-              {!collapsed && <div className="px-3 pb-1 pt-2 font-display text-[0.7rem] font-bold uppercase tracking-widest text-muted">{g.group}</div>}
+              {!collapsed && <div className="px-3 pb-1 pt-2 font-display text-xs font-bold uppercase tracking-widest text-muted">{g.group}</div>}
               <div className="space-y-1">
                 {g.items.map((it) => (
                   <SideLink key={it.to} item={it} collapsed={collapsed} />
@@ -224,13 +224,13 @@ export function Layout() {
             key={it.to}
             to={it.to}
             end={it.to === '/'}
-            className={({ isActive }) => cx('flex flex-col items-center gap-0.5 py-2 font-display text-[0.7rem] font-semibold', isActive && 'bg-butter text-onpastel')}
+            className={({ isActive }) => cx('flex flex-col items-center gap-0.5 py-2 font-display text-xs font-semibold', isActive && 'bg-butter text-onpastel')}
           >
             {it.icon}
             {it.label}
           </NavLink>
         ))}
-        <button onClick={() => setMoreOpen(true)} className="flex flex-col items-center gap-0.5 py-2 font-display text-[0.7rem] font-semibold" aria-haspopup="dialog" aria-expanded={moreOpen}>
+        <button onClick={() => setMoreOpen(true)} className="flex flex-col items-center gap-0.5 py-2 font-display text-xs font-semibold" aria-haspopup="dialog" aria-expanded={moreOpen}>
           <MoreHorizontal size={20} aria-hidden />
           More
         </button>
@@ -248,7 +248,7 @@ export function Layout() {
             </div>
             {NAV.map((g) => (
               <div key={g.group} className="mb-3">
-                <div className="px-1 pb-1 font-display text-[0.7rem] font-bold uppercase tracking-widest text-muted">{g.group}</div>
+                <div className="px-1 pb-1 font-display text-xs font-bold uppercase tracking-widest text-muted">{g.group}</div>
                 <div className="grid grid-cols-2 gap-2">
                   {g.items.map((it) => (
                     <SideLink key={it.to} item={it} onClick={() => setMoreOpen(false)} />

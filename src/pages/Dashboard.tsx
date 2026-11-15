@@ -140,7 +140,7 @@ export default function Dashboard() {
                 <div className="flex w-full flex-1 items-end">
                   <div className={`w-full rounded-t-[4px] border-2 border-line ${x.date === t ? 'bg-butter' : 'bg-sky'}`} style={{ height: `${Math.max(4, (x.hours / maxH) * 100)}%`, opacity: x.hours ? 1 : 0.35 }} />
                 </div>
-                <span className="text-[0.65rem] font-semibold">{x.day[0]}</span>
+                <span className="text-xs font-semibold">{x.day[0]}</span>
               </div>
             ))}
           </div>

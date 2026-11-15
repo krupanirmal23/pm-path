@@ -94,7 +94,7 @@ function FrameworkDetail({ f }: { f: Framework }) {
       <PageHeader title={f.name} kicker={<div className="flex gap-2"><Chip color={FW_COLOR[f.category]}>{f.category}</Chip><Link to={`/week/${f.week}`}><Chip>Week {f.week}</Chip></Link></div>}>
         {f.oneLiner}
       </PageHeader>
-      <div className="grid gap-5 lg:grid-cols-2">
+      <div className="grid gap-5 lg:grid-cols-2 [&>*]:min-w-0">
         <Card className="p-5 lg:col-span-2">
           <CardTitle>What it is</CardTitle>
           <p className="mt-2">{f.what}</p>

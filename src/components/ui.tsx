@@ -45,10 +45,10 @@ export function Card({ color, hover, className, as: As = 'div', ...rest }: CardP
 
 export function CardTitle({ children, icon, className }: { children: ReactNode; icon?: ReactNode; className?: string }) {
   return (
-    <h3 className={cx('flex items-center gap-2 text-base font-bold', className)}>
+    <h2 className={cx('flex items-center gap-2 text-base font-bold', className)}>
       {icon}
       {children}
-    </h3>
+    </h2>
   );
 }
 

@@ -107,7 +107,7 @@ export function SearchDialog({ onClose }: { onClose: () => void }) {
                 className={cx('cursor-pointer px-4 py-3', i === active && 'bg-butter/40')}
               >
                 <div className="flex items-center gap-2">
-                  <span className={cx('rounded-[6px] border-2 border-line px-1.5 text-[0.7rem] font-bold uppercase', KIND_COLOR[h.kind])}>{h.kind}</span>
+                  <span className={cx('rounded-[6px] border-2 border-line px-1.5 text-xs font-bold uppercase', KIND_COLOR[h.kind])}>{h.kind}</span>
                   {h.meta && <span className="text-xs text-muted">{h.meta}</span>}
                   {i === active && <CornerDownLeft size={14} className="ml-auto" aria-hidden />}
                 </div>

@@ -108,25 +108,25 @@ export default function Estimation() {
         </div>
       </Card>
 
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <Card className="p-5">
           <CardTitle className="mb-3">Build the formula, one assumption per line</CardTitle>
           <ol className="space-y-2">
             {steps.map((s, i) => (
-              <li key={s.id} className="grid grid-cols-[64px_minmax(0,1fr)_120px_80px_36px] items-center gap-2">
+              <li key={s.id} className="grid grid-cols-[56px_minmax(0,1fr)_minmax(0,1fr)_36px] items-center gap-2 border-b-2 border-line/20 pb-2 sm:grid-cols-[64px_minmax(0,1fr)_120px_80px_36px] sm:border-0 sm:pb-0">
                 {i === 0 ? (
-                  <span className="text-center font-display text-sm font-bold">Start</span>
+                  <span className="order-1 text-center font-display text-sm font-bold sm:order-none">Start</span>
                 ) : (
-                  <Select aria-label="Operator" value={s.op} onChange={(e) => update(s.id, { op: e.target.value as Op })}>
+                  <Select aria-label="Operator" className="order-1 sm:order-none" value={s.op} onChange={(e) => update(s.id, { op: e.target.value as Op })}>
                     {(['×', '÷', '+', '−'] as Op[]).map((o) => (
                       <option key={o}>{o}</option>
                     ))}
                   </Select>
                 )}
-                <Input aria-label="Assumption" value={s.label} onChange={(e) => update(s.id, { label: e.target.value })} />
-                <Input aria-label="Value" type="number" step="any" value={s.value} onChange={(e) => update(s.id, { value: Number(e.target.value) })} />
-                <Input aria-label="Unit" value={s.unit} onChange={(e) => update(s.id, { unit: e.target.value })} placeholder="unit" />
-                <Button size="sm" variant="ghost" onClick={() => setSteps(steps.filter((x) => x.id !== s.id))} aria-label="Remove step" disabled={steps.length <= 1}>
+                <Input aria-label="Assumption" className="order-2 col-span-2 sm:order-none sm:col-span-1" value={s.label} onChange={(e) => update(s.id, { label: e.target.value })} />
+                <Input aria-label="Value" className="order-4 col-start-2 sm:order-none sm:col-start-auto" type="number" step="any" value={s.value} onChange={(e) => update(s.id, { value: Number(e.target.value) })} />
+                <Input aria-label="Unit" className="order-5 sm:order-none" value={s.unit} onChange={(e) => update(s.id, { unit: e.target.value })} placeholder="unit" />
+                <Button size="sm" variant="ghost" className="order-3 sm:order-none" onClick={() => setSteps(steps.filter((x) => x.id !== s.id))} aria-label="Remove step" disabled={steps.length <= 1}>
                   <Trash2 size={14} aria-hidden />
                 </Button>
               </li>

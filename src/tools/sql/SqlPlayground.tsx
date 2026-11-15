@@ -69,9 +69,17 @@ export default function SqlPlayground() {
   const [ms, setMs] = useState<number | null>(null);
 
   useEffect(() => {
-    loadDatabase()
-      .then(setDb)
-      .catch((e) => setLoadErr(String(e?.message || e)));
+    // Let the page paint first; the SQLite engine (~700 kB) and dataset build happen right after.
+    let alive = true;
+    const t = setTimeout(() => {
+      loadDatabase()
+        .then((d) => alive && setDb(d))
+        .catch((e) => alive && setLoadErr(String(e?.message || e)));
+    }, 50);
+    return () => {
+      alive = false;
+      clearTimeout(t);
+    };
   }, []);
 
   const problem: SqlProblem | undefined = SQL_PROBLEMS.find((p) => p.id === problemId);
@@ -123,8 +131,8 @@ export default function SqlPlayground() {
   };
 
   return (
-    <div className="grid gap-6 xl:grid-cols-[300px_minmax(0,1fr)]">
-      <aside className="space-y-4">
+    <div className="grid grid-cols-[minmax(0,1fr)] gap-6 xl:grid-cols-[300px_minmax(0,1fr)]">
+      <aside className="min-w-0 space-y-4">
         <Card className="p-4">
           <div className="mb-2 flex items-center justify-between">
             <CardTitle>Problems</CardTitle>
@@ -172,7 +180,7 @@ export default function SqlPlayground() {
                   {t.table}
                 </button>
                 <span className="text-muted"> · {t.desc}</span>
-                <div className="font-mono text-[0.7rem] leading-relaxed text-muted">{t.cols}</div>
+                <div className="font-mono text-xs leading-relaxed break-words text-muted">{t.cols}</div>
               </li>
             ))}
           </ul>
