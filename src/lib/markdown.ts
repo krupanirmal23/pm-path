@@ -142,13 +142,14 @@ export function parseQuiz(src: string): QuizQuestion[] {
 /** Split a lesson body into markdown, quiz and reveal-answer segments. */
 export function splitSegments(body: string): Segment[] {
   const out: Segment[] = [];
-  const re = /```(quiz|answer)([^\n]*)\n([\s\S]*?)\n```/g;
+  // ```answer / ```quiz blocks; use 4+ backticks when the block itself contains code fences.
+  const re = /(`{3,})(quiz|answer)([^\n]*)\n([\s\S]*?)\n\1(?!`)/g;
   let last = 0;
   let m: RegExpExecArray | null;
   while ((m = re.exec(body))) {
     if (m.index > last) out.push({ type: 'md', md: body.slice(last, m.index) });
-    if (m[1] === 'quiz') out.push({ type: 'quiz', questions: parseQuiz(m[3]) });
-    else out.push({ type: 'answer', md: m[3], label: m[2].trim() || 'Reveal model answer' });
+    if (m[2] === 'quiz') out.push({ type: 'quiz', questions: parseQuiz(m[4]) });
+    else out.push({ type: 'answer', md: m[4], label: m[3].trim() || 'Reveal model answer' });
     last = m.index + m[0].length;
   }
   if (last < body.length) out.push({ type: 'md', md: body.slice(last) });
@@ -173,7 +174,7 @@ export function headingsOf(body: string): { id: string; text: string }[] {
 export function wordCount(md: string): number {
   return md
     .replace(/<svg[\s\S]*?<\/svg>/g, ' ')
-    .replace(/<[^>]+>/g, ' ')
+    .replace(/<\/?[a-zA-Z][^>]*>/g, ' ')
     .replace(/[#>*_`|\-]/g, ' ')
     .split(/\s+/)
     .filter(Boolean).length;
@@ -183,7 +184,7 @@ export function stripMarkdown(md: string): string {
   return md
     .replace(/<svg[\s\S]*?<\/svg>/g, ' ')
     .replace(/```[\s\S]*?```/g, ' ')
-    .replace(/<[^>]+>/g, ' ')
+    .replace(/<\/?[a-zA-Z][^>]*>/g, ' ')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/[#>*_`|]/g, ' ')
     .replace(/\s+/g, ' ')

@@ -17,9 +17,25 @@ Lesson format: frontmatter (`id, title, week, estimatedMinutes, tags`), then sec
 `## Quiz` (a ```` ```quiz ```` block: `Q:` lines, `- [x] option :: explanation`) · `## Key takeaways`.
 Callouts: `> [!TIP]`, `> [!WARNING]`, `> [!EXAMPLE]`, `> [!INTERVIEW]`, `> [!NOTE]`.
 
+Run `node scripts/coverage.mjs` to see exactly which lessons and guides exist.
+
 | Week | Lessons | Tool guides |
 |---|---|---|
-| 1 | in progress | |
+| 1–4 (Phase 1) | done | done |
+| 5 | in progress | |
+
+## SQL Playground dataset (lessons in Week 5 reference this exact schema)
+Synthetic Indian food-delivery data, fixed seed, dates 2025-01-01 → 2025-06-30.
+- `users(user_id, name, city, signup_date, platform, acquisition_channel, is_premium)`
+- `restaurants(restaurant_id, name, city, cuisine, rating, avg_cost_for_two, is_veg_only, onboarded_date)`
+- `orders(order_id, user_id, restaurant_id, order_ts, status, payment_method, subtotal, delivery_fee, discount, total, delivery_minutes, coupon_code)`
+  - status ∈ delivered / cancelled / refunded; payment_method ∈ upi / card / cod / wallet
+- `order_items(order_item_id, order_id, item_name, category, quantity, price)`
+- `sessions(session_id, user_id, session_start, platform, duration_seconds)`
+- `events(event_id, user_id, session_id, event_name, event_ts)`
+  - event_name ∈ app_open / search / view_restaurant / add_to_cart / checkout_start / payment_success / payment_failed
+- cities: Bengaluru, Mumbai, Delhi, Hyderabad, Pune, Chennai; platform ∈ android / ios / web
+- acquisition_channel ∈ organic / referral / paid_social / search_ads / partner
 
 ## Next steps (in order)
 5. Toolkit tools (SQL Playground + dataset + 40 problems first)

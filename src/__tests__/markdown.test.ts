@@ -27,3 +27,11 @@ describe('markdown helpers', () => {
     expect(renderUserMarkdown('<script>alert(1)</script>')).not.toContain('<script>');
   });
 });
+
+describe('nested fences', () => {
+  it('supports 4-backtick answer blocks containing code', () => {
+    const segs = splitSegments('A\n````answer Show\n```sql\nSELECT 1;\n```\n````\nB');
+    expect(segs.map((s) => s.type)).toEqual(['md', 'answer', 'md']);
+    expect(segs[1].type === 'answer' && segs[1].md).toContain('SELECT 1;');
+  });
+});
