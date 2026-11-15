@@ -42,7 +42,19 @@ Synthetic Indian food-delivery data, fixed seed, dates 2025-01-01 → 2025-06-30
 - cities: Bengaluru, Mumbai, Delhi, Hyderabad, Pune, Chennai; platform ∈ android / ios / web
 - acquisition_channel ∈ organic / referral / paid_social / search_ads / partner
 
-## Next steps (in order)
-5. (done) Toolkit tools (SQL Playground + dataset + 40 problems first)
-6. Templates, Frameworks (40+), Interview Prep (200+ Qs), Job Search, Portfolio, Glossary (200+), Weekly Review, Skip This
-7. Global search (MiniSearch), PWA icons/offline check, performance pass, README
+## Steps 5–7 (done)
+- Toolkit: SQL Playground (sql.js, 7,203-row dataset, 40 graded problems), RICE, Metrics Tree, Funnel & Retention Explorer, A/B Test calculator, Estimation Scratchpad, AI Cost Calculator, Eval Labeler, Prompt Lab, Mock Interview Timer (`src/tools/`, registry in `src/tools/registry.ts`)
+- Templates: 21 in `src/content/templates/*.md` (frontmatter + guide, then `<!-- template -->` blank, then `<!-- example -->` filled example)
+- Frameworks: 51 in `src/data/frameworks/*.ts`
+- Interview prep: 207 questions in `src/data/questions/*.ts` (9 categories × 23), mock mode with 45-minute phased timer and rubric, mock log, 10-slot STAR story bank
+- Job search Kanban, outreach counter, callback rates, Bengaluru APM guide (`src/content/pages/bengaluru-apm.md`)
+- Portfolio, Glossary (277 terms in `src/data/glossary.ts`), Weekly Review, Skip This
+- Global search (MiniSearch, `src/lib/search.ts`), PWA icons, offline verified (lessons + SQL engine work with the server stopped)
+- Lighthouse (production build, mobile; performance/accessibility/best practices/SEO): home 93/98/100/91 (the SEO miss was a missing robots.txt, since added); lesson 93/100/100/100; SQL tool 92/98/100/100
+
+## Status
+The build is complete. All content is validated by `npm test` (lessons, guides, templates, frameworks, questions, glossary, SQL solutions, stats).
+
+## Ideas for later
+- Add more SQL problems or a second dataset
+- Optional sync via a user-owned file (File System Access API) for multi-device use
