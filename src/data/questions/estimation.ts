@@ -1,0 +1,28 @@
+import { mk, type Question } from './types';
+const Q = mk('estimation');
+
+export const ESTIMATION: Question[] = [
+  Q('01', 'E', 'How many cups of chai are sold at tea stalls in Bengaluru each day?', ['Population ~1.3 crore → adults ~1 crore', '~50% drink chai outside daily', '~1.5 cups each → ~75 lakh cups', 'Sanity check with stalls × cups per stall'], ['Clear structure, stated assumptions', 'Sanity check'], ['Silent maths', 'No check']),
+  Q('02', 'M', 'Estimate the number of food delivery orders in India per day.', ['Urban internet users who order food', 'Order frequency per month', 'Daily orders = users × frequency / 30', 'Cross-check with restaurant supply'], ['Segmenting users by frequency'], ['Using total population']),
+  Q('03', 'M', 'Estimate the market size for coaching classes for engineering entrance exams in India.', ['Students taking exams per year (~12–15 lakh)', '% attending coaching', 'Average fee', 'Market = students × % × fee', 'Add online vs offline split'], ['Revenue sizing structure'], ['Mixing users and revenue']),
+  Q('04', 'E', 'How many ATMs are there in India?', ['Bottom-up: bank branches × ATMs per branch + off-site', 'Or demand: withdrawals per day ÷ capacity per ATM', 'Sanity check'], ['Picking an approach and justifying it'], ['No approach']),
+  Q('05', 'H', 'Estimate the annual revenue of a quick-commerce company in one metro city.', ['Dark stores in city', 'Orders per store per day', 'Average order value', 'Revenue = take rate × GMV', 'Sensitivity on assumptions'], ['Business acumen'], ['Confusing GMV and revenue']),
+  Q('06', 'M', 'How many two-wheelers are sold in India each year?', ['Households ~30 crore', 'Two-wheeler ownership rate', 'Replacement cycle', 'Sales = owners ÷ replacement years + new owners'], ['Replacement logic'], ['Forgetting replacements']),
+  Q('07', 'E', 'How many smartphones are sold in India each year?', ['Smartphone users ~70 crore', 'Replacement every ~3 years', 'New users per year', 'Total'], ['Clean, step-by-step logic with stated assumptions'], ['No replacement cycle']),
+  Q('08', 'M', 'Estimate the number of weddings in India per year.', ['Population ~140 crore', 'People reaching marriage age per year', '% who marry', 'Weddings = marriages ÷ 1 (each wedding = 2 people)'], ['Avoiding double counting'], ['Counting people instead of weddings']),
+  Q('09', 'H', 'Estimate the revenue from parking in Bengaluru per year.', ['Cars and two-wheelers', 'Paid parking usage frequency', 'Average fee', 'Segments: malls, offices, streets'], ['Segmentation'], ['One-line answer']),
+  Q('10', 'M', 'How many UPI transactions happen in India per day?', ['UPI users', 'Transactions per user per day', 'Merchants vs P2P', 'Sanity check against public monthly figures if known'], ['Reasonable assumptions'], ['Wildly off orders of magnitude']),
+  Q('11', 'E', 'How many laptops are there in your city?', ['Households and offices', 'Ownership rates by segment', 'Sum'], ['Segmenting households vs businesses'], ['Ignoring businesses']),
+  Q('12', 'M', 'Estimate the market for pet food in India.', ['Households with pets', 'Dogs vs cats', '% fed packaged food', 'Monthly spend × 12'], ['Adoption rate assumption'], ['Assuming all pets eat packaged food']),
+  Q('13', 'H', 'How many delivery riders work in Bengaluru?', ['Orders per day (food + grocery + parcels)', 'Orders per rider per day', 'Peak vs off-peak adjustment', 'Riders = peak demand ÷ capacity'], ['Peak-capacity thinking'], ['Using averages only']),
+  Q('14', 'E', 'How many movie tickets are sold in India each year?', ['Screens ~9,000', 'Shows per day × seats × occupancy', '× 365'], ['Supply-side approach'], ['No occupancy assumption']),
+  Q('15', 'M', 'Estimate the number of Uber rides in Mumbai per day.', ['Commuters using cabs', 'Share of Uber', 'Trips per user per day'], ['Market share logic'], ['Ignoring autos and competitors']),
+  Q('16', 'M', 'How much does India spend on mobile recharges per year?', ['Mobile subscribers ~110 crore', 'Prepaid share', 'Average monthly recharge', 'Total'], ['Clear maths'], ['Ignoring dual-SIM']),
+  Q('17', 'H', 'Estimate the cost to serve an LLM chatbot to 1 lakh daily users.', ['Messages per user per day', 'Tokens per message (in/out)', 'Price per million tokens', 'Daily and monthly cost', 'Levers: caching, smaller model'], ['AI cost awareness'], ['Ignoring input tokens and context']),
+  Q('18', 'E', 'How many petrol pumps are there in India?', ['Vehicles × fuel per day', 'Fuel sold per pump per day', 'Pumps = demand ÷ capacity'], ['Demand-capacity logic'], ['No structure']),
+  Q('19', 'M', 'Estimate how many people use LinkedIn daily in India.', ['Registered users', 'Monthly active %', 'Daily active % of monthly'], ['Funnel of activity'], ['Using registered users as daily users']),
+  Q('20', 'H', 'Estimate the annual revenue of a popular coffee chain in India.', ['Stores', 'Customers per store per day', 'Average bill', 'Days × stores'], ['Store economics'], ['Forgetting store count']),
+  Q('21', 'E', 'How many students are there in Indian engineering colleges?', ['Annual intake', 'Years of study', 'Dropout adjustments'], ['Stock vs flow thinking'], ['Ignoring course length']),
+  Q('22', 'M', 'Estimate the market for online grocery in Tier-2 cities.', ['Tier-2 households', '% online shoppers', 'Grocery spend online', 'Total'], ['Segment adoption assumptions'], ['Using metro adoption rates']),
+  Q('23', 'M', 'How many hours of YouTube are watched in India per day?', ['Users', 'Average minutes per day', 'Total hours'], ['Reasonable usage numbers'], ['No sanity check']),
+];
