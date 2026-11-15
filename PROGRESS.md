@@ -24,7 +24,8 @@ Run `node scripts/coverage.mjs` to see exactly which lessons and guides exist.
 |---|---|---|
 | 1–4 (Phase 1) | done | done |
 | 5–8 (Phase 2) | done | done |
-| 9 | in progress | |
+| 9–11 (Phase 3) | done | done |
+| 12 | in progress | |
 
 ## SQL Playground dataset (lessons in Week 5 reference this exact schema)
 Synthetic Indian food-delivery data, fixed seed, dates 2025-01-01 → 2025-06-30.
