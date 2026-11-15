@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Search, Timer } from 'lucide-react';
 import { QUESTIONS, Q_CATEGORIES, categoryLabel, type Difficulty, type Question } from '../../data/questions';
 import { useStore } from '../../store/useStore';
@@ -47,7 +47,8 @@ export function QuestionCard({ q, practised }: { q: Question; practised?: number
 
 export function QuestionBank() {
   const mocks = useStore((s) => s.mocks);
-  const [q, setQ] = useState('');
+  const [params] = useSearchParams();
+  const [q, setQ] = useState(() => QUESTIONS.find((x) => x.id === params.get('q'))?.q ?? '');
   const [cat, setCat] = useState('all');
   const [diff, setDiff] = useState('all');
   const [limit, setLimit] = useState(30);
