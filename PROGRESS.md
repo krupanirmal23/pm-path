@@ -25,7 +25,9 @@ Run `node scripts/coverage.mjs` to see exactly which lessons and guides exist.
 | 1–4 (Phase 1) | done | done |
 | 5–8 (Phase 2) | done | done |
 | 9–11 (Phase 3) | done | done |
-| 12 | in progress | |
+| 12–14 (Phase 4) | done | done |
+
+All 101 lessons and 42 tool guides are written and validated (`npm test`).
 
 ## SQL Playground dataset (lessons in Week 5 reference this exact schema)
 Synthetic Indian food-delivery data, fixed seed, dates 2025-01-01 → 2025-06-30.
@@ -41,6 +43,6 @@ Synthetic Indian food-delivery data, fixed seed, dates 2025-01-01 → 2025-06-30
 - acquisition_channel ∈ organic / referral / paid_social / search_ads / partner
 
 ## Next steps (in order)
-5. Toolkit tools (SQL Playground + dataset + 40 problems first)
+5. (done) Toolkit tools (SQL Playground + dataset + 40 problems first)
 6. Templates, Frameworks (40+), Interview Prep (200+ Qs), Job Search, Portfolio, Glossary (200+), Weekly Review, Skip This
 7. Global search (MiniSearch), PWA icons/offline check, performance pass, README
